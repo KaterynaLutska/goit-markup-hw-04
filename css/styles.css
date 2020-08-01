@@ -64,6 +64,9 @@ margin-right: 30px;
   letter-spacing: 0.02em;
 }
 
+/* .mail{
+  fill: #2196f3;
+} */
 
 .mail::before {
   content: "";
@@ -80,7 +83,7 @@ margin-right: 30px;
    content: '';
    display: inline-block;
 
-   background-image: url(../images/smartphon.svg);
+   background-image: url(../images/smartphone.svg);
    height: 15px;
    width: 10px;
    margin-right: 10px;
@@ -272,10 +275,20 @@ background-color #2196f3;
   justify-content: center;
 }
 
-.link-social:focus,
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+  color: antiquewhite;
+}
+/* .sprite{
+  background-image: url(../images/instagram.svg);
+} */
+
+
+/* .link-social:focus,
 .link-social:hover {
   background-color: var(--accent-color);
-}
+} */
 .link-social:last-child{
   margin-right: 0;
 }
