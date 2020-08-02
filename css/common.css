@@ -49,7 +49,7 @@ body {
 }
 
 a {
-  display: block;
+  /* display: block; */
   text-decoration: none;
   color: #757575;
   font-style: normal;
