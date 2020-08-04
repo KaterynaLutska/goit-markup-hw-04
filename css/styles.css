@@ -9,61 +9,91 @@ html {
   /* outline: 1px solid blue; */
 }
 
-
 /* site nav */
+
 .site-nav .link {
   color: var(--title-text-color);
 }
+
 .site-nav .link:hover,
-.site-nav .link:focus,
-.site-adress .link:hover,
-.site-adress .link:focus {
+.site-nav .link:focus {
   color: #2196f3;
 }
+
+
+.mail-info:hover,
+.mail-info:focus {
+fill: var(--accent-color);
+  } 
+  
 
 .link.current {
   color: var(--accent-color);
   letter-spacing: 0.02em;
 }
 
+.mail-info{
+  fill: #AFB1B8;
+  stroke-width: 1px;
+}
+
+
+
 /* main navigation */
 
-.menu-list, .mail-info {
+.flexbox {
+display: flex;
+}
+
+.menu-list {
   display: inline-flex; 
-  align-items: center;
+  align-items: baseline;
   vertical-align: middle;
+  
 }
 
-.mail-info{
-  width: 16px;
-  margin-right: 10px;
-}
-
-.menu-list.box{
-  margin-right: auto;
-}
 
 .menu-items:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav {
+.site-nav  {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.menu-items{
+margin-right: 10px;
 }
 
 .adress-items:not(:last-child) {
 margin-right: 30px;
 }
 
-.site-adress { 
+
+.mail-info {
+  margin-right: 10px;
+  align-items: baseline;
+}
+
+
+.menu-list.box{
+  margin-right: auto;
+} 
+
+.site-adress.list { 
+  justify-content: flex-end;
+  align-items: center;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
 
 /* section hero */
 
@@ -108,14 +138,14 @@ margin-right: 30px;
   background-color: #F5F4FA;
   width: 270px;
   height: 120px;
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .icons-work {
   display: flex;
-
   width: 70px;
   height: 70px;
+  margin: auto;
 }
 
 .section-title {
@@ -123,6 +153,7 @@ margin-right: 30px;
   color: var(--title-text-color);
   text-align: center;
 }
+
 .work-description .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -139,6 +170,7 @@ font-size: 14px;
 line-height: 1.71;
 font-weight: 400;
 }
+
 
 /* section 2 */
 .section-deck {
@@ -220,34 +252,35 @@ color: #2196f3;
 background-color #2196f3;
 }
 
+.icon-social {
+display: inline-flex;
+ 
+/* border: 1px solid gray; */
+/* border-radius: 50%; */
+width: 44px;
+height: 44px;
+fill: #AFB1B8;
+}
+
 .link-social {
- display: flex;
- margin-right: 10px;
-
-  /* border: 1px solid gray; */
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
+width: calc((100% - 10px * 3) / 4);
+margin-right: 10px;
 }
 
-.icon-instagram {
-  width: 20px;
-  height: 20px;
-  color: antiquewhite;
-}
-/* .sprite{
-  background-image: url(../images/instagram.svg);
-} */
-
-
-/* .link-social:focus,
-.link-social:hover {
-  background-color: var(--accent-color);
-} */
 .link-social:last-child{
-  margin-right: 0;
+margin-right: 0;
 }
+
+.icon-social:focus,
+.icon-social:hover,
+.icon-social.footer:hover,
+.icon-social.footer:focus {
+  fill: white;
+  background-color: var(--accent-color);
+  
+}
+
+
 
 /* section partner */
 
@@ -255,13 +288,9 @@ background-color #2196f3;
   padding: 94px 0 94px 0;
 }
 
-.partner-item .link::before {
-  content: "";
+.partner-item {
+  
   display: inline-block;
-
-  background-image: url(../images/logo1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
  
   width: 170px;
   height: 90px;
@@ -269,25 +298,22 @@ background-color #2196f3;
   border-radius: 4px;
 }
 
- .link.icon-logo2::before {
-  background-image: url(../images/logo2.svg);
+.icon-partner:hover,
+.icon-partner:focus {
+  fill: var(--accent-color)
+
 }
-.link.icon-logo3::before {
-  background-image: url(../images/logo3.svg);
+.icon-partner {
+  fill: #AFB1B8;
+  background-position: 50% 50%;
+  align-items: center;
+  justify-content: center;
+
 }
-.link.icon-logo4::before{
-  background-image: url(../images/logo4.svg);
-}
-.link.icon-logo5::before {
-  background-image: url(../images/logo5.svg);
-}
-.link.icon-logo6::before{
-  background-image: url(../images/logo6.svg);
-}
+
 
 .partner-item{
   margin-right: 30px;
-
   width: calc((100% - 30px * 5) / 6);
 }
 
@@ -421,7 +447,7 @@ font-weight: 400;
 }
 
 .email, .telephone {
-margin-bottom: 9px;
+margin-bottom: 9px; 
 
 font-size: 14px;
 line-height: 1.71;
@@ -440,7 +466,7 @@ font-weight: 400;
 
 .sociallist li{
   align-items: center;
-}
+} 
 
 .mail-box {
   display: flex;
@@ -453,9 +479,8 @@ font-weight: 400;
   border: 1px solid gray;
   width: 358px;
   height: 50px;
-}
-
-.join {
+} 
+ .join {
 display: block;
 margin-bottom: 20px;
 
@@ -466,3 +491,8 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
+.icon-social.footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: white;
+  background-size: contain;
+}

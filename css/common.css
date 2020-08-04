@@ -38,6 +38,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -49,7 +51,7 @@ body {
 }
 
 a {
-  /* display: block; */
+  display: block;
   text-decoration: none;
   color: #757575;
   font-style: normal;
@@ -126,18 +128,26 @@ button {
 
 main-btn .button .primary {
   background-color: var(--accent-color);
-  color: white;
 }
+
 .send {
+  display: inline-flex;
   margin-left: 10px;
+  fill: white;
+  width: 24px;
 }
 
 .btn-join {
   display: flex;
   padding: 10px 28px 10px 29px;
+  height: 50px;
+  width: 200px;
 }
+
 .filtr:hover,
-.filtr:focus {
+.filtr:focus,
+.btn-join:hover,
+.btn-join:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
