@@ -512,3 +512,10 @@ footer {
   fill: white;
   background-size: contain;
 }
+
+.email:hover,
+.telephone:focus,
+.email:focus,
+.telephone:hover {
+  color: #2196f3;
+}
