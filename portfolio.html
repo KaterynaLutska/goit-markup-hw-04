@@ -11,34 +11,44 @@
     <title>Web Studio</title>
 </head>
 <body>
-    <header class="page-haeder">
-        <div class="container menu-list">
-            <!--Головна навігація-->
-            <nav class="menu-list box">
-                <a href="" class="logo header list"><span class="blue">Web</span> <span class="dark">Studio</span>
-                </a>
-                <ul class="site-nav list menu-list">
-                    <li class="menu-items">
-                        <a href="./" class="link">Студия</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="./portfolio.html" class="link current">Портфолио</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="" class="link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="site-adress list menu-list">
-                <li class="adress-items mail">
-                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+<header class="page-haeder">
+    <div class="container flexbox">
+        <!--Головна навігація-->
+        <nav class="menu-list box">
+            <a href="./" class="logo header list"><span class="blue">Web</span> <span class="dark">Studio</span>
+            </a>
+            <ul class="site-nav list menu-list">
+                <li class="menu-items">
+                    <a href="./" class="link">Студия</a>
                 </li>
-                <li class="adress-items tel">
-                    <a href="tel:+380961111111" class="link"> +38 096 111 11 11</a>
+                <li class="menu-items">
+                    <a href="./portfolio.html" class="link current">Портфолио</a>
+                </li>
+                <li class="menu-items">
+                    <a href="" class="link">Контакты</a>
                 </li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="site-adress list">
+            <li class="adress-items">
+                <a href="mailto:info@devstudio.com" class="link adress-items-link">
+                    <svg class="mail-info" width="16" height="11">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="adress-items">
+                <a href="tel:+380961111111" class="link adress-items-link">
+                    <svg class="mail-info" width="10" height="15">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
     <!--Головна секція-->
     <main>
         <section>
@@ -160,9 +170,13 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-address">
-                <a href="" class="logo"> <span class="blue">Web</span><span class="white">Studio</span> </a>
+                <a href="" class="logo">
+                    <span class="blue">Web</span><span class="white">Studio</span>
+                </a>
                 <address>
-                    <span class="address"> г. Киев, пр-т Леси Украинки, 26 <br /> </span>
+                    <span class="address">
+                        г. Киев, пр-т Леси Украинки, 26 <br />
+                    </span>
                     <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
                     <a href="tel:+380961111111" class="telephone"> +38 096 111 11 11</a>
                 </address>
@@ -170,23 +184,48 @@
             <div class="join-social">
                 <b class="join">присоединяйтесь</b>
                 <ul class="list sociallist">
-                    <li class="link-social"><a href="" aria-label="Ссылка на Twitter"> <img src="./images/instagram.svg"
-                                alt=""></a></li>
-                    <li class="link-social"><a href="" aria-label="Ссылка на Instagram"><img src="./images/twitter.svg"
-                                alt=""></a></li>
-                    <li class="link-social"><a href="" aria-label="Ссылка на Facebook"><img src="./images/facebook.svg"
-                                alt=""></a></li>
-                    <li class="link-social"><a href="" aria-label="Ссылка на Linkedin"><img src="./images/linkedin.svg"
-                                alt=""></a></li>
+                    <li class="link-social footer">
+                        <a href="#" class="team-link">
+                            <svg class="icon-social">
+                                <use href="./images/sprite.svg#icon-instagram" width="20"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social footer">
+                        <a href="#" class="team-link">
+                            <svg class="icon-social">
+                                <use href="./images/sprite.svg#icon-twitter" width="20"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social footer">
+                        <a href="#" class="team-link">
+                            <svg class="icon-social">
+                                <use href="./images/sprite.svg#icon-facebook" width="20"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social footer">
+                        <a href="#" class="team-link">
+                            <svg class="icon-social">
+                                <use href="./images/sprite.svg#icon-linkedin" width="20"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="join-us">
                 <b class="join">Подпишитесь на рассылку</b>
                 <div class="mail-box">
-                    <div> E-mail </div>
-                    <a href="" class="button btn-join">Подписаться<img src="./images/send.svg" alt="" class="send"> </a>
+                    <div>E-mail</div>
+                    <a href="" class="button btn-join">Подписаться
+                        <svg class="send">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
+        </div>
     </footer>
     <!--  -->
 </body>

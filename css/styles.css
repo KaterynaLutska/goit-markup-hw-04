@@ -41,6 +41,10 @@ html {
   align-items: center;
 }
 
+.page-haeder {
+  border-bottom: 1px solid #ececec;
+}
+
 .menu-list {
   display: inline-flex;
   align-items: center;
@@ -102,14 +106,20 @@ html {
   padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
-  border: 1px solid #ececec;
+  margin-right: auto;
+  margin-left: auto;
+  background: #c4c4c4;
 
-  background-image: url("../images/hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/hero.jpg");
 }
 
 .hero-title {
   margin-bottom: 30px;
-  text-align: center;
 
   font-weight: 900;
   color: white;
@@ -207,7 +217,7 @@ html {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background-color: #f5f4fa;
+  background: #f5f4fa;
 }
 
 .business-card {
@@ -411,6 +421,15 @@ footer {
   background-color: #2f303a;
 }
 
+.footer-container > div:not(:last-child) {
+  width: calc((50% - 45px) / 2);
+  margin-right: 30px;
+}
+
+.footer-container > div:last-child {
+  width: calc(50% - 15px);
+}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -433,6 +452,15 @@ footer {
   font-weight: 400;
 }
 
+.list.sociallist {
+  width: 206px;
+}
+
+.link-social.footer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
 .email,
 .telephone {
   margin-bottom: 9px;
@@ -447,10 +475,10 @@ footer {
   margin-bottom: 0;
 }
 
-.join-social {
+/* .join-social {
   margin-left: 69px;
   margin-right: 94px;
-}
+} */
 
 .sociallist li {
   align-items: center;
