@@ -323,7 +323,8 @@ html {
   margin-right: 0;
 }
 
-a:hover .icon-partner {
+a:hover .icon-partner,
+a:focus .icon-partner {
   fill: var(--accent-color);
 }
 
@@ -363,6 +364,13 @@ a:hover .icon-partner {
   display: flex;
   flex-wrap: wrap;
 }
+
+.box-item-link:hover,
+.box-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .box-item {
   margin-bottom: 30px;
   margin-right: 30px;
